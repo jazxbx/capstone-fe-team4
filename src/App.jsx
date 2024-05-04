@@ -1,10 +1,19 @@
+import { Header } from './components/Header';
 import { Navbar } from './components/Navbar';
+import { Search } from './components/Search';
 
 export function App() {
   return (
     <div className='container'>
+      <Header />
       <Navbar />
-      <p>Hello this is APP</p>
+      <main className='main'>
+        <div className='searchContainer'>
+          <Search />
+        </div>
+        <div>Hello this is APP</div>
+        <div>Test div</div>
+      </main>
     </div>
   );
 }

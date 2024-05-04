@@ -38,7 +38,8 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+li {
   list-style: none;
 }
 
@@ -95,4 +96,28 @@ select {
 
 .container {
   margin: 0 0.6rem;
+}
+
+/* Main content - search bar and recipes */
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.75rem;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  width: 18rem;
+  margin-top: 4.6rem;
+}
+
+/* tablets */
+@media (min-width: 768px) {
+  .searchContainer {
+    align-self: flex-start;
+    width: 27rem;
+    height: 3.5rem;
+    margin-top: 0;
+  }
 }
