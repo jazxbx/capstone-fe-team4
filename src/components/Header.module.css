@@ -1,0 +1,55 @@
+.container {
+  /* height: 2.4rem;
+    width: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 3px solid var(--clr-dark);
+}
+
+.app {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.button {
+  width: 140px;
+  height: 2.6rem;
+  font-size: 20px;
+}
+/* mobile */
+@media all and (max-width: 480px) {
+  .button {
+    display: none;
+  }
+}
+
+/* tablet*/
+
+@media all and (min-width: 480px) {
+  p,
+  .big {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-weight: 800;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .navContainer {
+    padding: 1rem 6rem;
+  }
+
+  .flex {
+    gap: 2rem;
+  }
+}
