@@ -1,126 +1,97 @@
-body {
-  padding: 0;
-  margin: 0;
+:root {
+  color-scheme: light dark;
+
+  --clr-light: #fafafa;
+  --clr-dark: #252525;
+
+  --clr-primary: #e1edf6;
+  --clr-secondary: #5035ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme {
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+  }
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  background-color: #dae0e6;
-  font-size: 12px;
 }
 
-.home-page-container {
-  background-color: white;
-  background-image: url("https://th.bing.com/th/id/R.8193dccce1dabcf301b1a746b99d6ca0?rik=MQlcz3feTcAl%2bw&pid=ImgRaw&r=0");
-  background-size: 100% 50%;
-  background-position: center top;
-  background-repeat: no-repeat;
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
-.mealtime-list-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 15%;
-  height: 100vh;
-  background-color: #cbf83f;
-  padding: 30px 20px;
-  color: black;
-  border-top: 1px solid #dae0e6;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
 
-.type-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  padding: 20px 0;
+/* Set core root defaults */
+html:focus-within {
+  min-height: 100%;
+  scroll-behavior: smooth;
 }
 
-.type {
-  font-size: 14px;
-  padding: 10px;
-  cursor: pointer;
-  width: 100px;
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--clr-light);
 }
 
-.type:hover {
-  background-color: lightgrey;
-  border-radius: 10px;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-.submit {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-  padding: 10px;
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-.submit:hover {
-  background-color: lightgrey;
-  border-radius: 10px;
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-.no-underline {
-    text-decoration: none;
-}
-
-.icon-text-container {
-  display: flex;
-  align-items: baseline;
-  gap: 10px; 
-  
-}
-.content-container {
-  display: flex;
-  align-items: center;
-}
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px; 
-}
-.box-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  color: white;
-  text-align: center;
-  padding: 5px;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  padding: 50px;
-  background-color: rgb(211, 207, 207);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin: 0 10px; 
-  transition: box-shadow 0.3s ease-in-out; 
-}
-.box:hover {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Apply a box shadow effect on hover */
-}
-.boxes-container {
-  flex-grow: 1;
-  padding: 20px;
-  margin-top: 450px;
-  display: flex;
-  justify-content: center; 
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
-.box img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.box p {
-  text-align: center;
+.container {
+  margin: 0 0.6rem;
 }
