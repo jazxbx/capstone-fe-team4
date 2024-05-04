@@ -1,0 +1,17 @@
+.navContainer {
+  /* height: 2.4rem;
+  width: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 3px solid var(--clr-dark);
+}
+
+.app {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
