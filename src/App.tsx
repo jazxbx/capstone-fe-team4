@@ -13,8 +13,10 @@ export function App() {
           <div className='searchContainer'>
             <Search />
           </div>
-          <div>Hello this is APP</div>
-          <div>Test div</div>
+          {/* TODO: how to display this? */}
+          <section>
+            <h2>Recently added</h2>
+          </section>
         </main>
       </div>
       <Footer />
