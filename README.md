@@ -1,8 +1,13 @@
-# React + Vite
+# A recipe book app to keep recipes. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a recipe book app I made to help me organize and manage recipes efficiently.
 
-Currently, two official plugins are available:
+- Refactored Frontend: The frontend of the application has been refactored, transitioning from JavaScript to TypeScript. This enhances the codebase's readability, maintainability, and scalability.
+- Built with React + TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+To get started with the project, follow these steps:
+
+Clone the Repository: Clone this repository to your local machine using git clone.
+Install Dependencies: Navigate to the project directory and install the necessary dependencies by running npm install or yarn install.
+Run the App: Start the development server by running npm start or yarn start. This will launch the application in your default web browser.
