@@ -33,13 +33,13 @@
 /* tablet*/
 
 @media all and (min-width: 480px) {
-  p,
-  .big {
+  p {
     font-size: 2.5rem;
+    font-weight: 800;
   }
 
-  p {
-    font-weight: 800;
+  .mode {
+    font-size: 24px;
   }
 
   .hidden {

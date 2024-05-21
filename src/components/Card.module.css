@@ -1,5 +1,5 @@
 .container {
-  height: 17rem;
+  height: 15rem;
   width: 19rem;
   background-color: var(--clr-primary);
   position: relative;
@@ -26,7 +26,7 @@
 /* tablet and desktop */
 @media all and (min-width: 480px) {
   .container {
-    height: 21rem;
-    width: 22rem;
+    height: 15rem;
+    width: 20rem;
   }
 }

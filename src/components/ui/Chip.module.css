@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.default {
+  composes: container;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.dark {
+  composes: container;
+  background-color: var(--clr-secondary);
+  color: var(--clr-light);
+}
+
+/* tablets and desktop */
+
+@media all and (min-width: 480px) {
+  .container {
+    font-size: 1rem;
+  }
+}

@@ -51,7 +51,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  min-height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: 'Nunito Sans', sans-serif;
@@ -95,22 +95,33 @@ select {
 }
 
 .container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.layout {
   margin: 0 0.6rem;
 }
 
 /* Main content - search bar and recipes */
-.main {
+.content {
+  /* margin: 0 0.6rem; */
   display: flex;
-  flex-direction: column;
   padding: 0.6rem 0.75rem;
   align-items: center;
-  height: 100vh;
+  margin-bottom: 20px;
 }
 
 .searchContainer {
   display: flex;
   width: 18rem;
   margin-top: 4.6rem;
+  padding: 0.75rem;
+}
+
+.heading {
+  padding: 0.75rem;
+  font-size: 1rem;
 }
 
 /* tablets */
@@ -120,5 +131,9 @@ select {
     width: 27rem;
     height: 3.5rem;
     margin-top: 0;
+  }
+
+  .heading {
+    font-size: 1.7rem;
   }
 }
