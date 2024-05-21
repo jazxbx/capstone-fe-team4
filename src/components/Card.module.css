@@ -1,0 +1,32 @@
+.container {
+  height: 15rem;
+  width: 19rem;
+  background-color: var(--clr-primary);
+  position: relative;
+}
+
+.content {
+  display: flex;
+  padding: 0.6rem;
+  height: 80%;
+  flex-direction: column;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  background-color: var(--clr-light);
+}
+
+.tags {
+  padding: 0.6rem;
+  color: var(--clr-dark);
+}
+
+/* tablet and desktop */
+@media all and (min-width: 480px) {
+  .container {
+    height: 15rem;
+    width: 20rem;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  background-color: var(--clr-dark);
+  color: var(--clr-secondary);
+  font-size: 0.8rem;
+  /* font-size: clamp(12.8px, 40%, 24px); */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* tablet */
+
+@media all and (min-width: 480px) {
+  .container {
+    height: 5rem;
+    font-size: 1rem;
+  }
+}
